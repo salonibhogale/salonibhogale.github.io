@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I study political institutions, political economy and development, with a regional focus on South Asia. In Fall 2026, I will be joining as a Postdoctoral Fellow at the Kellogg Institute for International Studies at the University of Notre Dame. I received my Ph.D. in Political Science from the University of Wisconsin--Madison. 
+I study political institutions, political economy and development, with a regional focus on South Asia. In Fall 2026, I will be joining as a Postdoctoral Fellow at the <a target="_blank" rel="noopener noreferrer" href="https://kellogg.nd.edu/" style="text-decoration: none;">Kellogg Institute for International Studies</a> at the University of Notre Dame. I received my Ph.D. in Political Science from the <a target="_blank" rel="noopener noreferrer" href="https://polisci.wisc.edu/" style="text-decoration: none;">University of Wisconsin--Madison</a> in August 2026. 
 
 My research program in political economy focuses on access to justice, accountability, and judicial delays in India. I also study the broader political economy of health and development in comparative contexts, and develop methods at the intersection of causal inference and machine learning. Across projects, I leverage natural experiments, spatio-temporal models and machine learning; my work ultimately seeks to answer what determines the effectiveness of institutions and their capacity to achieve stated goals. 
 
