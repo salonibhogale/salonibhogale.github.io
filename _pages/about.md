@@ -22,4 +22,4 @@ Legal interventions can have vastly different outcomes for different groups of p
 
 My research has been supported by the National Science Foundation’s Law and Science Dissertation Grant, APSA’s Early Career Experimental Fellowship; and the Scott Kloeck-Jenson Fellowship, the Elections Research Center and the Institute for Regional and International Studies at the University of Wisconsin–Madison. I am affiliated with the <a target="_blank" style="text-decoration: none;" rel="noopener noreferrer" href="https://chtc.cs.wisc.edu/">Center for High Throughput Computing </a> and frequently leverage scientific computing to improve performance of tasks in the research pipeline.
 
-To get in touch with me, please email at  <a target="_blank" style="text-decoration: none;" rel="noopener noreferrer" href="mailto:bhogale@wisc.edu"> bhogale@wisc.edu
+To get in touch with me, please email at  <a target="_blank" style="text-decoration: none;" rel="noopener noreferrer" href="mailto:sbhogale@nd.edu"> sbhogale@nd.edu
