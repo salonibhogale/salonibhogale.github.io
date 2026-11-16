@@ -1,0 +1,355 @@
+/* Styles for the single-column site layout (_layouts/site.html).
+   Everything is scoped under body.site so it wins over the theme's main.css. */
+
+body.site {
+  --color-text: #2c2c2c;
+  --color-text-light: #6a6a6a;
+  --color-heading: #1a1a1a;
+  --color-link: #c5050c;
+  --color-accent: #c5050c;
+  --color-border: #e6e6e6;
+  --color-abstract-bg: #f7f7f7;
+  --font-body: 'Source Sans 3', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'EB Garamond', Georgia, serif;
+  --max-width: 920px;
+
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-text);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+html { overflow-y: scroll; }
+
+body.site *,
+body.site *::before,
+body.site *::after { box-sizing: border-box; }
+
+body.site a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+body.site a:hover { text-decoration: underline; }
+body.site a:visited { color: var(--color-link); }
+
+/* ---------- Top navigation ---------- */
+
+body.site .top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+body.site .top-nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.65rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem 1.6rem;
+}
+
+body.site .nav-name,
+body.site .nav-name:visited {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-heading);
+}
+body.site .nav-name:hover { text-decoration: none; }
+
+body.site .nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.6rem;
+}
+
+body.site .nav-tabs a,
+body.site .nav-tabs a:visited {
+  position: relative;
+  padding: 0.3rem 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-text-light);
+  transition: color 0.2s;
+}
+body.site .nav-tabs a:hover,
+body.site .nav-tabs a.active {
+  color: var(--color-link);
+  text-decoration: none;
+}
+body.site .nav-tabs a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+/* ---------- Page shell ---------- */
+
+body.site .page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 2rem 2rem;
+}
+
+body.site h1,
+body.site h2,
+body.site h3 {
+  font-family: var(--font-body);
+  color: var(--color-heading);
+  line-height: 1.3;
+  margin: 0;
+}
+
+body.site .page-title {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 1.5rem;
+}
+
+body.site .section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 2.4rem 0 1.2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-border);
+}
+body.site .page-title + .section-title,
+body.site .section-title:first-child { margin-top: 0; }
+
+body.site p { margin: 0 0 1rem; }
+
+/* ---------- Hero (About) ---------- */
+
+body.site .hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+body.site .hero-photo img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 12%;
+}
+
+body.site .hero-bio {
+  font-size: 0.97rem;
+  line-height: 1.6;
+}
+body.site .hero-bio p:last-child { margin-bottom: 0; }
+
+body.site .hero-links {
+  margin-top: 1.5rem;
+  font-size: 1.02rem;
+}
+body.site .hero-links a { font-weight: 600; }
+body.site .hero-links .sep {
+  margin: 0 0.45rem;
+  color: #bbb;
+}
+
+/* ---------- Selected research (About) ---------- */
+
+body.site .selected {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 2rem 2.5rem;
+}
+
+body.site .selected-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+body.site .selected-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+body.site .view-all {
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+body.site .selected-item { margin-bottom: 1.1rem; }
+body.site .selected-item .title,
+body.site .selected-item .title:visited {
+  font-weight: 600;
+  color: var(--color-heading);
+}
+body.site .selected-item .title::before {
+  content: '\203A\00a0';
+  color: var(--color-accent);
+}
+body.site .selected-item .title:hover { color: var(--color-link); }
+body.site .selected-item .meta {
+  font-size: 0.88rem;
+  color: var(--color-text-light);
+}
+
+/* ---------- Research entries ---------- */
+
+body.site .pub { margin-bottom: 1.6rem; }
+
+body.site .pub-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-heading);
+}
+body.site .pub-title a,
+body.site .pub-title a:visited { color: var(--color-heading); }
+body.site .pub-title a:hover { color: var(--color-link); }
+
+body.site .pub-badge {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.05rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  vertical-align: 0.1em;
+  color: var(--color-link);
+  border: 1px solid #ecb5b7;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+body.site .pub-meta {
+  font-size: 0.92rem;
+  color: var(--color-text-light);
+}
+body.site .pub-award {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: #9b0000;
+}
+
+body.site .pub-links {
+  margin-top: 0.15rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+body.site .pub-links a { margin-right: 0.6rem; }
+
+body.site .pub details { margin-top: 0.15rem; }
+body.site .pub summary {
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-link);
+  cursor: pointer;
+  list-style: none;
+}
+body.site .pub summary::-webkit-details-marker { display: none; }
+body.site .pub summary::before { content: '[+] '; }
+body.site .pub details[open] summary::before { content: '[\2212] '; }
+body.site .pub summary:hover { text-decoration: underline; }
+
+body.site .pub-abstract {
+  margin: 0.5rem 0 0;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  background: var(--color-abstract-bg);
+  border-left: 2px solid var(--color-accent);
+}
+
+/* ---------- Simple lists (Teaching, Resources) ---------- */
+
+body.site .item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body.site .item-list li {
+  margin: 0 0 0.75rem;
+  line-height: 1.5;
+}
+body.site .item-list .name {
+  font-weight: 600;
+  color: var(--color-heading);
+}
+body.site .item-list a.name,
+body.site .item-list a.name:visited { color: var(--color-link); }
+body.site .item-list .meta {
+  font-size: 0.92rem;
+  color: var(--color-text-light);
+}
+body.site .item-list .links {
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+
+body.site .lead {
+  color: var(--color-text);
+  margin-bottom: 1.4rem;
+}
+
+/* ---------- Footer ---------- */
+
+body.site .site-footer {
+  max-width: var(--max-width);
+  margin: 2rem auto 0;
+  padding: 1.2rem 2rem 2rem;
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+  border-top: 1px solid #f0f0f0;
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 700px) {
+  body.site { font-size: 16px; }
+
+  body.site .top-nav-inner { padding: 0.6rem 1.25rem; }
+  body.site .nav-name { font-size: 1.5rem; }
+  body.site .nav-tabs { gap: 0 1.2rem; }
+
+  body.site .hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1.25rem 1.5rem;
+  }
+  body.site .hero-photo img {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+  }
+  body.site .hero-links { line-height: 2; }
+
+  body.site .page,
+  body.site .selected,
+  body.site .site-footer {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}

@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Saloni Bhogale"
 title_separator          : "-"
 name                     : &name "Saloni Bhogale"
-description              : &description "personal description"
+description              : &description "Saloni Bhogale is a Postdoctoral Visiting Fellow at the Kellogg Institute for International Studies, University of Notre Dame. She studies access to justice, courts and political institutions in India."
 url                      : https://salonibhogale.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "salonibhogale/salonibhogale.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Saloni Bhogale"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral Fellow at Kellogg Institute for International Studies (Fall 2026)"
+  bio              : "Postdoctoral Visiting Fellow at the Kellogg Institute for International Studies"
   location         : "University of Notre Dame"
   # employer         : "University of Wisconsin-Madison"
   uri              : # URL
@@ -62,7 +62,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "saloni-bhogale-2a565846"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -162,6 +162,9 @@ include:
   - _pages
   - files
 exclude:
+  - README.md
+  - docker-compose.yaml
+  - .devcontainer
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

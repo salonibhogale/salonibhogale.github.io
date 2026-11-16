@@ -1,0 +1,23 @@
+<div class="pub">
+  <div class="pub-title">
+    {% if include.item.url %}<a href="{{ include.item.url }}">{{ include.item.title }}</a>{% else %}{{ include.item.title }}{% endif %}
+    {% if include.item.badge %}<span class="pub-badge">{{ include.item.badge }}</span>{% endif %}
+  </div>
+  {% if include.item.authors or include.item.venue %}
+    <div class="pub-meta">
+      {% if include.item.authors %}{{ include.item.authors | slice: 0 | upcase }}{{ include.item.authors | slice: 1, 500 }}{% endif %}{% if include.item.authors and include.item.venue %} &middot; {% endif %}{{ include.item.venue }}
+    </div>
+  {% endif %}
+  {% if include.item.award %}<div class="pub-award">{{ include.item.award }}</div>{% endif %}
+  {% if include.item.links %}
+    <div class="pub-links">
+      {% for link in include.item.links %}<a href="{{ link.url }}">[{{ link.label }}]</a>{% endfor %}
+    </div>
+  {% endif %}
+  {% if include.item.abstract %}
+    <details>
+      <summary>Abstract</summary>
+      <p class="pub-abstract">{{ include.item.abstract }}</p>
+    </details>
+  {% endif %}
+</div>

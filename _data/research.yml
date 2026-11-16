@@ -1,0 +1,71 @@
+# Research listed on /research/ and (for entries marked `selected: true`) on the home page.
+#
+# Fields for each entry:
+#   title     (required)
+#   url       link for the title: a PDF in this repo ("/paper.pdf") or a full https:// address
+#   authors   coauthor line, e.g. "with Jane Doe"
+#   venue     journal / year / status line (HTML allowed)
+#   badge     small label shown next to the title
+#   award     shown in italics under the venue
+#   links     extra links: a list of {label, url}
+#   abstract  shown behind an "Abstract" toggle (HTML allowed)
+#   selected  true to also show the entry under "Selected Research" on the home page
+
+publications:
+  - title: "The Good, the Bad, and the Deadly Consequences of India's Pandemic Response"
+    url: "https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003197614-13/india-saloni-bhogale-pavithra-suryanarayan"
+    authors: "with Pavithra Suryanarayan"
+    venue: "2022. <i>Populists and the Pandemic</i>, eds. Nils Ringe and Lucio Renno"
+
+  - title: "India in 2021: At the Crossroads"
+    url: "https://rbhavnani.github.io/files/BhavnaniBhogaleAsianSurvey.pdf"
+    authors: "with Rikhil Bhavnani"
+    venue: "2022. <i>Asian Survey</i> 62(1): 161–172."
+
+  - title: "What can Question Hour tell us about representation in the Indian Parliament?"
+    url: "https://www.ideasforindia.in/topics/social-identity/what-can-question-hour-tell-us-about-representation-in-the-indian-parliament.html"
+    venue: "2020. <i>Ideas for India</i>."
+
+working_papers:
+  - title: "The Political Roots of Legal Access: Evidence from Village Councils in India"
+    venue: "Under Review"
+    badge: "Job Market Paper"
+    selected: true
+    abstract: >-
+      Politicians have long served as brokers for citizens navigating the state. Can elected members of village councils facilitate citizens' access to the formal justice system? Justice seekers face social and administrative costs that cause most grievances to remain outside the state's purview. Council members lower these barriers by serving as legal brokers. I test this theory in 28,000 village councils in Maharashtra, India, leveraging population-based discontinuities in council size, paired with an original dataset of 3.2 million court cases. I find that additional council members increase case filings by 39%. Qualitative data document these direct interactions, and surveys of citizens and council elections data show that this phenomenon is explained by greater capacity and descriptive representation in larger councils. These findings reveal how political institutions act as a catalyst for legal mobilization.
+
+  - title: "Term Lengths and Parliamentary Performance: Evidence from Natural Experiments in India"
+    authors: "with Sarthak Agrawal, Madhav Malhotra and Tanya Sethi"
+    venue: "Under Review"
+    award: "Winner of the Mildred Potter Hovland Journal Article Prize 2025"
+    selected: true
+    abstract: >-
+      Do term lengths worsen performance in indirectly elected legislatures? Term length is a powerful incentive that can change representatives' priorities and shape their performance. We argue that indirectly elected members are characterized by superior quality and capacity, which can overcome shirking on account of shorter terms. We demonstrate this by leveraging natural experiments in the indirectly elected <em>Rajya Sabha</em> of the Indian Parliament. In 1952, a public lottery randomly assigned term lengths to a founding cohort of representatives. We combine this with detailed data from their parliamentary records to show that shorter terms did not worsen their parliamentary performance. Second, we leverage quasi-random variation in term lengths in a setting where ensuring quality is much harder, and find that shorter terms worsen performance. Taken together, these findings indicate that the effects of perverse incentives in indirectly elected legislatures are conditional and depend on the type of actors they operate upon.
+
+  - title: "Unfunded Mandates and Judicial Performance: Evidence from Alcohol Prohibition"
+    abstract: >-
+      While criminal legal reforms are enacted to protect vulnerable populations, they can impose burdens on the judicial infrastructure due to increased caseloads. When unfunded, these reforms risk overwhelming existing judicial capacities. This paper evaluates the effect of one such reform — a state-wide prohibition on alcohol in Bihar, India — on judicial performance. Employing a difference-in-differences research design that leverages quasi-random variations in case assignments across courts, I analyze micro-level data from over 650,000 case filings between 2015 and 2017. I find that the reform significantly increased demands on the justice system and deteriorated case resolution rates, as judges reallocated time toward urgent, resource-intensive litigation. The findings highlight how unfunded criminal legal reforms can inadvertently degrade the quality of justice.
+
+  - title: "Musical Chairs: The Causes and Effects of Frequent Judicial Transfers"
+    authors: "with Rikhil Bhavnani and Amit Jadhav"
+    selected: true
+    abstract: >-
+      We argue that a major and underappreciated cause of judicial delays is the frequent transfer of judges, which reduces productivity by leaving courtrooms vacant and prompting new judges to rehear inherited cases. In India, judge transfers are frequent partly because the rules that insulate assignments from politics generate transfers. A seniority rule converts each judge's departure into a chain of cascading reassignments. Drawing on new administrative data on 6.4 million cases from India's largest state, where judges are transferred every 7 months, we estimate that each transfer causes a courtroom to issue 8–10 fewer decisions and reduces the probability of a case being decided by 12%. Estimates based on mandatory retirements at age 60 are similar. Staggering transfers and time-bound disposal rules can attenuate these costs. We extend research on the bureaucracy to the judiciary and show how rules designed to depoliticize personnel decisions can degrade state capacity.
+
+  - title: "Understanding Heterogeneity in Causal Inference Using Varying Coefficient Models Estimated with BART"
+    authors: "with Sameer Deshpande"
+    selected: true
+    abstract: >-
+      Understanding treatment effect heterogeneity is important, but many standard approaches to estimate heterogeneous treatment effects rely on strong assumptions. We present a novel approach to estimate heterogeneous treatment effects in a variety of experimental and observational set-ups commonly used in economics and political science such as multi-arm RCTs and difference-in-differences designs. We set up the estimation and inference problem in the form of a linear varying coefficient model and use Bayesian Additive Regression Trees (BART) to estimate the coefficients. We demonstrate how the approach can be leveraged to understand heterogeneity in multi-arm experiments and difference-in-differences designs. Our approach makes no parametric assumptions about the treatment effect function and estimates it using a flexible regression tree ensemble. We illustrate the benefits of using the approach to estimate heterogeneous treatment effects for studies across various sub-fields of political science. In doing so, our study adds to the growing literature on using flexible machine-learning methods for causal inference.
+
+  - title: "Excess Deaths and Net Non-COVID Excess Deaths Across the U.S. Rural-Urban Continuum, 2020–2023"
+    venue: "Revise and Resubmit, <i>SSM Population Health</i>"
+    authors: "with Malia Jones, Eugenio Paglino, Anyu Li and Raeven Chandler"
+    abstract: >-
+      The COVID-19 pandemic severely disrupted health landscapes, yet evaluating its full toll across the diverse U.S. rural-urban spectrum remains incomplete. Using restricted county-month cause-specific mortality data from the National Vital Statistics System from January 2020 through December 2023, we implemented Bayesian hierarchical spatio-temporal models to estimate baseline expected deaths relative to pre-pandemic trends (2015–2019). We evaluated both total excess deaths and net non-COVID excess deaths across the nine-tier USDA Rural-Urban Continuum Codes to observe subnational geographic and temporal shifts. Over this four-year window, the U.S. experienced over 1.47 million excess deaths, with 32% (473,452 deaths) not formally attributed to COVID-19. Relative excess mortality scaled progressively with rurality: urban centers experienced 12.4% to 12.7% higher-than-expected mortality, while remote, small-population rural counties peaked at 14.1% to 15.1% excess mortality. Excess mortality that was not attributed to COVID-19 mirrored this gradient, tracking at disproportionately higher rates in remote rural landscapes. Temporally, spikes in unexplained non-COVID excess deaths closely matched pandemic waves. This temporal alignment suggests a pervasive, place-based undercounting of direct COVID-19 deaths, possibly driven by limited resources and varying death investigation frameworks in rural counties. These findings reveal a stark, persistent rural mortality penalty long after initial pandemic policy interventions waned, emphasizing the urgent need for targeted healthcare infrastructure, resource equalization, and strategic rural public health investments.
+
+  - title: "The Geography of Excess Deaths of Despair: Rurality and Persistent Poverty During the COVID-19 Pandemic"
+    venue: "Under Review"
+    authors: "with Malia Jones and Raeven Chandler"
+    abstract: >-
+      Deaths not attributed to COVID-19 accounted for a substantial share of excess mortality during the pandemic, yet the causes and rural-urban distribution of these deaths remain poorly understood. We examine excess deaths of despair, including deaths from drug overdoses, alcohol-related causes, and suicide, across the U.S. rural-urban continuum and by county persistent poverty status. Drawing on Fundamental Cause Theory, we consider whether rural-urban mortality disparities may reflect longstanding structural disadvantage. Using restricted, complete-count National Vital Statistics System mortality data from 2015 to 2023 and Bayesian spatio-temporal models, we estimate deaths exceeding expected levels during the COVID-19 pandemic, March 2020–December 2023. Nationally, approximately 59,000 excess deaths of despair occurred during this period, accounting for roughly 13% of excess mortality not attributed to COVID-19 itself. Relative excess deaths of despair were highest in the most rural county categories, reaching 15.2% above expected levels. However, disparities by persistent poverty were more pronounced: persistently poor counties experienced 30.0% excess deaths of despair, compared with 10.3% in counties not experiencing persistent poverty. Deaths of despair remained elevated through the end of the study period in persistently poor counties, even as they declined in most rural-urban categories. These findings highlight substantial geographic inequalities in pandemic-era mortality extending beyond the impact of COVID-19 itself, and suggest that longstanding structural disadvantage warrants greater attention in explanations of rural health disparities. Rurality and persistent poverty are overlapping but distinct dimensions of geographic inequality, and understanding their contributions to mortality requires looking beyond rural-urban classifications alone.

@@ -1,0 +1,44 @@
+---
+layout: site
+permalink: /
+title: ""
+redirect_from:
+  - /about/
+  - /about.html
+---
+<section class="hero">
+  <div class="hero-photo">
+    <img src="/images/{{ site.author.avatar }}" alt="{{ site.author.name }}">
+  </div>
+  <div class="hero-text">
+    <div class="hero-bio" markdown="0">
+      <p>Hello! I am a Postdoctoral Visiting Fellow at the <a target="_blank" rel="noopener noreferrer" href="https://kellogg.nd.edu/">Kellogg Institute for International Studies</a> at the University of Notre Dame. My research program in political economy focuses on access to justice, accountability, and judicial delays in India. I also study the broader political economy of health and development, and introduce methods at the intersection of causal inference and machine learning to estimate heterogeneous treatment effects.</p>
+
+      <p>Across projects, I draw on natural experiments, spatio-temporal models, qualitative interviews and large administrative datasets. At its core, my work asks how the rule of law is maintained, and why some political institutions deliver on their promise while others fall short.</p>
+
+      <p>I received my Ph.D. in Political Science from the <a target="_blank" rel="noopener noreferrer" href="https://polisci.wisc.edu/">University of Wisconsin&ndash;Madison</a> in 2026, with a <a target="_blank" rel="noopener noreferrer" href="https://stat.wisc.edu/">Master's in Statistics</a>. My research has been supported by the National Science Foundation's Law and Science Dissertation Grant, APSA's Early Career Experimental Fellowship, and, at UW&ndash;Madison, the Scott Kloeck-Jenson Fellowship, the Elections Research Center and the Institute for Regional and International Studies. I am affiliated with the <a target="_blank" rel="noopener noreferrer" href="https://chtc.cs.wisc.edu/">Center for High Throughput Computing</a>, and I frequently use scientific computing to speed up tasks in the research pipeline.</p>
+    </div>
+    <div class="hero-links">
+      <a href="mailto:{{ site.author.email }}">Email</a>
+      <span class="sep">&middot;</span><a href="/CV.pdf">CV</a>
+      {% if site.author.googlescholar %}<span class="sep">&middot;</span><a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>{% endif %}
+      {% if site.author.linkedin %}<span class="sep">&middot;</span><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="selected">
+  <div class="selected-header">
+    <h2>Selected Research</h2>
+    <a class="view-all" href="/research/">View All &rarr;</a>
+  </div>
+  {% assign selected = site.data.research.working_papers | where: "selected", true %}
+  {% for item in selected %}
+    <div class="selected-item">
+      <a class="title" href="{{ item.url | default: '/research/' }}">{{ item.title }}</a>
+      <div class="meta">
+        {% if item.authors %}{{ item.authors | slice: 0 | upcase }}{{ item.authors | slice: 1, 500 }}. {% endif %}{% if item.badge %}{{ item.badge }}. {% endif %}{% if item.venue %}{{ item.venue }}.{% elsif item.badge == nil %}Working paper.{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</section>

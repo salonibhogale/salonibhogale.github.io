@@ -1,0 +1,20 @@
+---
+layout: site
+title: "Research"
+permalink: /research/
+redirect_from:
+  - /publications/
+  - /publications.html
+---
+{% comment %} Entries live in _data/research.yml {% endcomment %}
+<div class="page">
+  <h2 class="section-title">Articles</h2>
+  {% for item in site.data.research.publications %}
+    {% include research-entry.html item=item %}
+  {% endfor %}
+
+  <h2 class="section-title">Working Papers</h2>
+  {% for item in site.data.research.working_papers %}
+    {% include research-entry.html item=item %}
+  {% endfor %}
+</div>
