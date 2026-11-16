@@ -35,7 +35,7 @@ redirect_from:
   {% assign selected = site.data.research.working_papers | where: "selected", true %}
   {% for item in selected %}
     <div class="selected-item">
-      <a class="title" href="{{ item.url | default: '/research/' }}">{{ item.title }}</a>
+      {% if item.url %}<a class="title" href="{{ item.url }}">{{ item.title }}</a>{% else %}<span class="title">{{ item.title }}</span>{% endif %}
       <div class="meta">
         {% if item.authors %}{{ item.authors | slice: 0 | upcase }}{{ item.authors | slice: 1, 500 }}. {% endif %}{% if item.badge %}{{ item.badge }}. {% endif %}{% if item.venue %}{{ item.venue }}.{% elsif item.badge == nil %}Working paper.{% endif %}
       </div>

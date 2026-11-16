@@ -208,7 +208,7 @@ body.site .selected-item .title::before {
   content: '\203A\00a0';
   color: var(--color-accent);
 }
-body.site .selected-item .title:hover { color: var(--color-link); }
+body.site .selected-item a.title:hover { color: var(--color-link); }
 body.site .selected-item .meta {
   font-size: 0.88rem;
   color: var(--color-text-light);
