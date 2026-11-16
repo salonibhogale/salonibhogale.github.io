@@ -162,6 +162,7 @@ include:
   - _pages
   - files
 exclude:
+  - CV.tex
   - README.md
   - docker-compose.yaml
   - .devcontainer
